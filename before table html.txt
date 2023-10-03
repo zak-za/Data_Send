@@ -2,10 +2,9 @@
 
 
 <p style="color:green;font-size:14px;text-align:left;">
-Dear Mohammed<br/><br/>
+    Dear Mohammed<br/><br/>
 
-This is Test Example Mail  <br/><br/>
-can you check it please <br/><br/>
-
+    This is Test Example Mail <br/><br/>
+    can you check it please <br/><br/>
 </p>
 
