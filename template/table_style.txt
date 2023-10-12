@@ -1,0 +1,30 @@
+<style>
+    .styled-table
+   
+        {
+      border-collapse: collapse;
+       width: 100%;
+     }
+    
+
+
+    .styled-table thead tr {
+        background-color: #7abcd8;
+        color: #ffffff;
+        height:25px;
+        width :30px
+    }
+
+    
+
+    .styled-table th, td {
+            text-align: center;
+            padding: 10px;
+         }
+    
+
+    .styled-table tr:nth-child(even){background-color: #CCFFFF}
+
+
+</style>
+

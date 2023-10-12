@@ -9,7 +9,7 @@ def send_mail(body):
     for recipient_email in os.environ.get("RECIPIENT_EMAILS").split(','):
         
         # recipient_cc="najlae.sebbar@emeal.nttdata.com"
-        subject = "Hello ,"
+        subject = "Daily Jobs Mail"
         html_message = MIMEText(body, 'html')
         html_message['Subject'] = subject
         html_message['From'] = sender_email

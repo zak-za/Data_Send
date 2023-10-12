@@ -1,6 +1,6 @@
 import pyodbc
 import pandas as pd
-
+import os
 
 SERVER = '192.168.0.165,1433'
 DATABASE = 'BDMantenimiento_DAT'
@@ -16,4 +16,4 @@ def generate_db_data():
                 where d.DATEPLAN >= Cast('2023-09-21 16:30:36.290' As Date)
                 and d.DATEPLAN < DATEADD(Day, 1, Cast('2023-09-21 16:30:36.290' as Date))
                 or d.DATEPLAN >= DATEADD(DAy, -DATEPART(weekday, '2023-09-21 16:30:36.290')+1, cast('2023-09-21 16:30:36.290' as DAte))
-                and d.DATEPLAN <DATEADD(day, 8-DATEPART(weekday, '2023-09-21 16:30:36.290'), cast('2023-09-21 16:30:36.290' as date))""", conn).to_excel('items.xlsx')
+                and d.DATEPLAN <DATEADD(day, 8-DATEPART(weekday, '2023-09-21 16:30:36.290'), cast('2023-09-21 16:30:36.290' as date))""", conn).to_excel(os.path.join(os.getcwd(),'generate_data\\items.xlsx'))
